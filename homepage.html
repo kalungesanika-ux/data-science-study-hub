@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Data Science Study Hub</h1>
+        <p>Notes, PYQs, Practicals - All in One Place!</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#study">Study Material</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+        <h2>Welcome to Data Science Study Hub</h2>
+        <p>Your Learning Journey Starts Here!</p>
+        <button onclick="showStudy()">Explore Now</button>
+    </section>
+
+    <!-- STUDY MATERIAL -->
+    <section id="study">
+
+        <div id="year-box">
+            <h2>Select Your Year</h2>
+
+            <button onclick="showYear('FY')">First Year</button>
+            <button onclick="showYear('SY')">Second Year</button>
+            <button onclick="showYear('TY')">Third Year</button>
+        </div>
+
+        <!-- WORKSPACE -->
+        <div id="workspace" class="hidden">
+
+            <button onclick="goBack()">← Back</button>
+
+            <h2 id="year-title"></h2>
+
+            <!-- SEMESTERS -->
+            <div id="semester-box"></div>
+
+            <!-- SUBJECTS AND MATERIALS -->
+            <div id="study-layout" class="hidden">
+
+                <div id="semester-content">
+                    <h3>Subjects</h3>
+                    <p>Select a semester.</p>
+                </div>
+
+                <div id="materials">
+                    <h3>Study Material</h3>
+                    <p>Select a subject to view materials.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Data Science Study Hub provides semester-wise
+            study materials for B.Sc. Data Science students.
+        </p>
+        <p>University: Punyashlok Ahilyadevi Holkar Solapur University</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact and Feedback</h2>
+
+        <form>
+            <label>Your Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Your Feedback:</label>
+            <textarea rows="4" placeholder="Write your feedback"></textarea>
+
+            <button type="button">Submit</button>
+        </form>
+
+        <h4>Created By: B.Sc. Data Science Student</h4>
+    </section>
+
+    <footer>
+        <p>Data Science Study Hub</p>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
