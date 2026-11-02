@@ -4,11 +4,11 @@ let currentStep = 1;
 let subjects = {
     FY: {
         1: ["Introduction to DBMS", "Introduction to R Programming", "C Programming"],
-        2: ["Introduction to Data Science", "Introduction to Python Programming"]
+        2: ["Introduction to Data Science", "Introduction to Python Programming","Operationg System"]
     },
 
     SY: {
-        3: ["Statistical Computing I", "Classification and Regression I", "Application of Data Science"],
+        3: ["Statistical Computing I", "Classification and Regression I", "Application of Data Science","Data Visulization","PHP Programming"],
         4: ["Statistical Computing II", "Classification and Regression II", "AI and Data in Everyday Life"]
     },
 
